@@ -2,8 +2,6 @@ package io.github.w3code.tests;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
-import io.github.w3code.drivers.BrowserstackMobileDriver;
-import io.github.w3code.drivers.EmulationMobileDriver;
 import io.github.w3code.helpers.Attach;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
@@ -34,10 +32,8 @@ public class TestBase {
 
     @AfterEach
     public void afterEach() {
-        if(deviceHost.equals("browserstack")) {
-            String sessionId = getSessionId();
-            Attach.attachVideo(sessionId);
-        }
+        String sessionId = getSessionId();
+        Attach.attachVideo(sessionId, deviceHost);
         Attach.screenshotAs("Last screenshot");
         Attach.pageSource();
         closeWebDriver();

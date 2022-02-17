@@ -4,7 +4,7 @@ import static io.github.w3code.drivers.BrowserstackMobileDriver.browserstack;
 import static io.restassured.RestAssured.given;
 
 public class Browserstack {
-    public static String videoUrl(String sessionId) {
+    public static String getVideoUrl(String sessionId) {
         return given()
                 .auth().basic(browserstack.user(), browserstack.key())
                 .when()
