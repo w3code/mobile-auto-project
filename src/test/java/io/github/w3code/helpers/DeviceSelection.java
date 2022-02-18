@@ -2,6 +2,7 @@ package io.github.w3code.helpers;
 
 import io.github.w3code.drivers.BrowserstackMobileDriver;
 import io.github.w3code.drivers.EmulationMobileDriver;
+import io.github.w3code.drivers.RealDeviceMobileDriver;
 import io.github.w3code.drivers.SelenoidMobileDriver;
 
 public class DeviceSelection {
@@ -14,6 +15,8 @@ public class DeviceSelection {
                 return BrowserstackMobileDriver.class.getName();
             case "selenoid":
                 return SelenoidMobileDriver.class.getName();
+            case "realdevice":
+                return RealDeviceMobileDriver.class.getName();
             default:
                 throw new RuntimeException("Please select only " +
                         "emulation / browserstack / selenoid in -DdeviceHost parameter");
