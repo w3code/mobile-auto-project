@@ -1,4 +1,4 @@
-![](.\assets\icons\wikipedia_logo.svg "Wikipedia android mobile application tests")
+![](https://github.com/w3code/mobile-auto-project/blob/ae214a2b3f0579314588b6d42a60641563e5589a/assets/icons/wikipedia_logo.svg "Wikipedia android mobile application tests")
 
 # Wikipedia android mobile application tests
 
@@ -6,7 +6,7 @@
 
 ## Technology stack
 
-|![](.\assets\icons\java.svg "Java")|![](.\assets\icons\junit5.svg "JUnit5")|![](.\assets\icons\gradle.svg "Gradle")|![](.\assets\icons\selenide.svg "Selenide")|![](.\assets\icons\rest-assured.svg "Rest-Assured")|![](.\assets\icons\jenkins.svg "Jenkins")|![](.\assets\icons\selenoid.svg "Selenoid")|![](.\assets\icons\allurereport.svg "Allure Report")|![](.\assets\icons\alluretestops.svg "Allure TestOps")|![](.\assets\icons\jira.svg "Jira")|![](.\assets\icons\telegram.svg "Telegram")|
+|![](https://github.com/w3code/mobile-auto-project/blob/ae214a2b3f0579314588b6d42a60641563e5589a/assets/icons/java.svg "Java")|![](https://github.com/w3code/mobile-auto-project/blob/ae214a2b3f0579314588b6d42a60641563e5589a/assets/icons/junit5.svg "JUnit5")|![](https://github.com/w3code/mobile-auto-project/blob/ae214a2b3f0579314588b6d42a60641563e5589a/assets/icons/gradle.svg "Gradle")|![](https://github.com/w3code/mobile-auto-project/blob/ae214a2b3f0579314588b6d42a60641563e5589a/assets/icons/selenide.svg "Selenide")|![](https://github.com/w3code/mobile-auto-project/blob/ae214a2b3f0579314588b6d42a60641563e5589a/assets/icons/rest-assured.svg "Rest-Assured")|![](https://github.com/w3code/mobile-auto-project/blob/ae214a2b3f0579314588b6d42a60641563e5589a/assets/icons/jenkins.svg "Jenkins")|![](https://github.com/w3code/mobile-auto-project/blob/ae214a2b3f0579314588b6d42a60641563e5589a/assets/icons/selenoid.svg "Selenoid")|![](https://github.com/w3code/mobile-auto-project/blob/ae214a2b3f0579314588b6d42a60641563e5589a/assets/icons/allurereport.svg "Allure Report")|![](https://github.com/w3code/mobile-auto-project/blob/ae214a2b3f0579314588b6d42a60641563e5589a/assets/icons/alluretestops.svg "Allure TestOps")|![](https://github.com/w3code/mobile-auto-project/blob/ae214a2b3f0579314588b6d42a60641563e5589a/assets/icons/jira.svg "Jira")|![](https://github.com/w3code/mobile-auto-project/blob/ae214a2b3f0579314588b6d42a60641563e5589a/assets/icons/telegram.svg "Telegram")|
 | :--------: |:--------: | :--------: | :--------: | :--------: | :--------: | :--------: | :--------: | :--------: | :--------: | :--------: |
 | Java | JUnit5 | Gradle | Selenide | Rest-Assured | Jenkins | Selenoid | Allure Report | Allure TestOps | Jira | Telegram
 
