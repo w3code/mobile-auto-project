@@ -12,12 +12,19 @@ public class GetStartedPage {
     private final SelenideElement
             primaryTextView = $(MobileBy.id("org.wikipedia.alpha:id/primaryTextView")),
             forwardButton = $(MobileBy.id("org.wikipedia.alpha:id/fragment_onboarding_forward_button")),
-            doneButton = $(MobileBy.id("org.wikipedia.alpha:id/fragment_onboarding_done_button"));
+            doneButton = $(MobileBy.id("org.wikipedia.alpha:id/fragment_onboarding_done_button")),
+            skipButton = $(MobileBy.id("org.wikipedia.alpha:id/fragment_onboarding_skip_button"));
 
     //actions
     @Step("Check is \"{text}\" text exist")
     public GetStartedPage checkPageText(String text) {
         primaryTextView.shouldHave(text(text));
+        return this;
+    }
+
+    @Step("Tap on SKIP button")
+    public GetStartedPage tapOnSkipButton() {
+        skipButton.click();
         return this;
     }
 

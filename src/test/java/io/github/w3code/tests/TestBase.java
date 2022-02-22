@@ -2,7 +2,6 @@ package io.github.w3code.tests;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
-import io.appium.java_client.MobileBy;
 import io.github.w3code.helpers.Attach;
 import io.github.w3code.pages.GetStartedPage;
 import io.github.w3code.pages.MainPage;
@@ -11,7 +10,8 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.closeWebDriver;
+import static com.codeborne.selenide.Selenide.open;
 import static io.github.w3code.helpers.Attach.getSessionId;
 import static io.github.w3code.helpers.DeviceSelection.getDeviceDriver;
 import static io.qameta.allure.Allure.step;
