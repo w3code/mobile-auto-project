@@ -4,6 +4,8 @@ import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.appium.java_client.MobileBy;
 import io.github.w3code.helpers.Attach;
+import io.github.w3code.pages.GetStartedPage;
+import io.github.w3code.pages.MainPage;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -16,6 +18,8 @@ import static io.qameta.allure.Allure.step;
 
 public class TestBase {
     private static final String deviceHost = System.getProperty("deviceHost");
+    GetStartedPage getStartedPage = new GetStartedPage();
+    MainPage mainPage = new MainPage();
 
     @BeforeAll
     public static void setup() {

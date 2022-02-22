@@ -17,32 +17,16 @@ public class WikipediaAppTests extends TestBase {
     @DisplayName("Get Started pages test")
     @Tag("getstarted")
     void getStartedTest() {
-        step("Check is \"The Free Encyclopedia …in over 300 languages\" text exist", () ->
-                $(MobileBy.id("org.wikipedia.alpha:id/primaryTextView"))
-                        .shouldHave(text("The Free Encyclopedia …in over 300 languages")));
+        getStartedPage
+                .checkPageText("The Free Encyclopedia …in over 300 languages")
+                .tapOnContinueButton()
+                .checkPageText("New ways to explore")
+                .tapOnContinueButton()
+                .checkPageText("Reading lists with sync")
+                .tapOnContinueButton()
+                .checkPageText("Send anonymous data")
+                .tapOnGetStartedButton();
 
-        step("Tap on CONTINUE button", () ->
-                $(MobileBy.id("org.wikipedia.alpha:id/fragment_onboarding_forward_button")).click());
-
-        step("Check is \"New ways to explore\" text exist", () ->
-                $(MobileBy.id("org.wikipedia.alpha:id/primaryTextView")).shouldHave(text("New ways to explore")));
-
-        step("Tap on CONTINUE button", () ->
-                $(MobileBy.id("org.wikipedia.alpha:id/fragment_onboarding_forward_button")).click());
-
-        step("Check is \"Reading lists with sync\" text exist", () ->
-                $(MobileBy.id("org.wikipedia.alpha:id/primaryTextView")).shouldHave(text("Reading lists with sync")));
-
-        step("Tap on CONTINUE button", () ->
-                $(MobileBy.id("org.wikipedia.alpha:id/fragment_onboarding_forward_button")).click());
-
-        step("Check is \"Send anonymous data\" text exist", () ->
-                $(MobileBy.id("org.wikipedia.alpha:id/primaryTextView")).shouldHave(text("Send anonymous data")));
-
-        step("Tap on GET STARTED button", () ->
-                $(MobileBy.id("org.wikipedia.alpha:id/fragment_onboarding_done_button")).click());
-
-        step("Check is search form exist", () ->
-                $(MobileBy.id("org.wikipedia.alpha:id/search_container")).should(exist));
+        mainPage.checkSearchForm();
     }
 }
