@@ -16,7 +16,7 @@
 - [x] Search phrase test
 - [x] Add language test
 - [x] Check build version test
-- [ ] [In progress...]
+- [x] Disable Send Usage Data Test
 
 ## How to run
 
