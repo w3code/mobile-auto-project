@@ -75,8 +75,28 @@ public class WikipediaAppTests extends TestBase {
                 .tapOnSettings();
 
         settingsPage
-                .moveToAboutBlock()
+                .moveToBottom()
                 .tapAboutWikipediaApp()
                 .verifyBuildVersion(buildVersion);
+    }
+
+    @Test
+    @DisplayName("Disable Send Usage Data Test")
+    @Tag("DisableSendUsageDataTest")
+    void disableSendUsageDataTest() {
+        getStartedPage
+                .tapOnContinueButton()
+                .tapOnContinueButton()
+                .tapOnContinueButton()
+                .disableSendUsageData()
+                .tapOnGetStartedButton();
+
+        mainPage
+                .tapMoreButton()
+                .tapOnSettings();
+
+        settingsPage
+                .moveToBottom()
+                .checkIsSwitchOff();
     }
 }

@@ -18,7 +18,9 @@ public class SettingsPage {
     private final SelenideElement
             wikipediaLanguages = $(By.xpath("//android.widget.TextView[@text=\"Wikipedia languages\"]")),
             aboutWikipedia = $(By.xpath("//android.widget.TextView[@text=\"About the Wikipedia app\"]")),
-            buildVersion = $(MobileBy.id("org.wikipedia.alpha:id/about_version_text"));
+            buildVersion = $(MobileBy.id("org.wikipedia.alpha:id/about_version_text")),
+            sendUsageData = $(By.xpath("//android.widget.TextView[@text=\"Send usage reports\"]/../.."))
+                    .$(MobileBy.id("org.wikipedia.alpha:id/switchWidget"));
 
     private final ElementsCollection
             languagesList = $$(MobileBy.id("org.wikipedia.alpha:id/wiki_language_title"));
@@ -41,12 +43,12 @@ public class SettingsPage {
         return this;
     }
 
-    @Step("Move to About block")
-    public SettingsPage moveToAboutBlock() {
+    @Step("Move to Bottom")
+    public SettingsPage moveToBottom() {
         AndroidElement element =
                 (AndroidElement) WebDriverRunner.getWebDriver().findElement
                         (MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true)" +
-                                ".index(0)).scrollIntoView(new UiSelector().text(\"About the Wikipedia app\"))"));
+                                ".index(0)).scrollIntoView(new UiSelector().text(\"Terms of use\"))"));
         return this;
     }
 
@@ -59,6 +61,13 @@ public class SettingsPage {
     @Step("Verify build version")
     public SettingsPage verifyBuildVersion(String version) {
         buildVersion.shouldHave(text(version));
+        return this;
+    }
+
+    @Step("Check is Send usage reports switch off")
+    public SettingsPage checkIsSwitchOff() {
+        System.out.println(sendUsageData);
+        sendUsageData.shouldHave(text("OFF"));
         return this;
     }
 }

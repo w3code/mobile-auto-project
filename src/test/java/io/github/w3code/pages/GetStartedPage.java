@@ -17,7 +17,8 @@ public class GetStartedPage {
             skipButton = $(MobileBy.id("org.wikipedia.alpha:id/fragment_onboarding_skip_button")),
             addOrEditLanguage = $(MobileBy.id("org.wikipedia.alpha:id/addLangContainer")),
             addLanguage = $(By.xpath("//android.widget.TextView[@text=\"Add language\"]")),
-            navigateUp = $(By.xpath("//android.widget.ImageButton[@content-desc=\"Navigate up\"]"));
+            navigateUp = $(By.xpath("//android.widget.ImageButton[@content-desc=\"Navigate up\"]")),
+            sendUsageData = $(MobileBy.id("org.wikipedia.alpha:id/switchView"));
 
     //actions
     @Step("Check is \"{text}\" text exist")
@@ -67,4 +68,11 @@ public class GetStartedPage {
         navigateUp.click();
         return this;
     }
+
+    @Step("Disable send usage data")
+    public GetStartedPage disableSendUsageData() {
+        sendUsageData.click();
+        return this;
+    }
+
 }
