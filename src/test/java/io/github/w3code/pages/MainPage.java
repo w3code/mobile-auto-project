@@ -16,7 +16,9 @@ public class MainPage {
             searchForm = $(MobileBy.id("org.wikipedia.alpha:id/search_container")),
             searchField = $(MobileBy.id("org.wikipedia.alpha:id/search_container")).$(".android.widget.TextView"),
             searchFieldText = $(MobileBy.id("org.wikipedia.alpha:id/search_src_text")),
-            itemTitle = $(MobileBy.id("org.wikipedia.alpha:id/page_list_item_title"));
+            itemTitle = $(MobileBy.id("org.wikipedia.alpha:id/page_list_item_title")),
+            moreButton = $(MobileBy.id("org.wikipedia.alpha:id/nav_more_container")),
+            settingsSelect = $(MobileBy.id("org.wikipedia.alpha:id/main_drawer_settings_container"));
 
     private final ElementsCollection
             searchResults = $(MobileBy.id("org.wikipedia.alpha:id/search_results_list")).$$("android.view.ViewGroup");
@@ -44,6 +46,18 @@ public class MainPage {
     @Step("Check {searchPhrase} result")
     public MainPage checkSearchedResult(String searchPhrase) {
         itemTitle.shouldHave(text(searchPhrase));
+        return this;
+    }
+
+    @Step("Tap more button")
+    public MainPage tapMoreButton() {
+        moreButton.click();
+        return this;
+    }
+
+    @Step("Tap on settings")
+    public MainPage tapOnSettings() {
+        settingsSelect.click();
         return this;
     }
 }

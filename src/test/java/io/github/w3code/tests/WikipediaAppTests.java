@@ -38,4 +38,27 @@ public class WikipediaAppTests extends TestBase {
                 .checkResults()
                 .checkSearchedResult(searchPhrase);
     }
+
+    @Test
+    @DisplayName("Add language test")
+    @Tag("AddLanguageTest")
+    void addLanguageTest() {
+        String language = "Русский";
+
+        getStartedPage
+                .checkPageText("The Free Encyclopedia …in over 300 languages")
+                .tapOnAddOrEditLanguages()
+                .tapOnAddLanguage()
+                .selectLanguage(language)
+                .navigateUp()
+                .tapOnSkipButton();
+
+        mainPage
+                .tapMoreButton()
+                .tapOnSettings();
+
+        settingsPage
+                .tapWikipediaLanguages()
+                .verifyLanguage(language);
+    }
 }

@@ -5,6 +5,7 @@ import com.codeborne.selenide.logevents.SelenideLogger;
 import io.github.w3code.helpers.Attach;
 import io.github.w3code.pages.GetStartedPage;
 import io.github.w3code.pages.MainPage;
+import io.github.w3code.pages.SettingsPage;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -20,6 +21,7 @@ public class TestBase {
     private static final String deviceHost = System.getProperty("deviceHost");
     GetStartedPage getStartedPage = new GetStartedPage();
     MainPage mainPage = new MainPage();
+    SettingsPage settingsPage = new SettingsPage();
 
     @BeforeAll
     public static void setup() {
