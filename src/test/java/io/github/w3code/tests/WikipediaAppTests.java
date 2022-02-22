@@ -25,7 +25,7 @@ public class WikipediaAppTests extends TestBase {
     }
 
     @Test
-    @DisplayName("Search test")
+    @DisplayName("Search phrase test")
     @Tag("SearchTest")
     void searchTest() {
         String searchPhrase = "Appium";
@@ -60,5 +60,23 @@ public class WikipediaAppTests extends TestBase {
         settingsPage
                 .tapWikipediaLanguages()
                 .verifyLanguage(language);
+    }
+
+    @Test
+    @DisplayName("Check build version test")
+    @Tag("CheckBuildVersionTest")
+    void checkBuildVersionTest() {
+        String buildVersion = "2.7.50394-alpha-2022-02-18";
+
+        getStartedPage.tapOnSkipButton();
+
+        mainPage
+                .tapMoreButton()
+                .tapOnSettings();
+
+        settingsPage
+                .moveToAboutBlock()
+                .tapAboutWikipediaApp()
+                .verifyBuildVersion(buildVersion);
     }
 }

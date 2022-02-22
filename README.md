@@ -13,9 +13,9 @@
 ## Covered cases
 
 - [x] Get started pages test
-- [ ] [In progress...]
-- [ ] [In progress...]
-- [ ] [In progress...]
+- [x] Search phrase test
+- [x] Add language test
+- [x] Check build version test
 - [ ] [In progress...]
 
 ## How to run
