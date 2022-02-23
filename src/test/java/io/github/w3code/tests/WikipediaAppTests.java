@@ -34,6 +34,7 @@ public class WikipediaAppTests extends TestBase {
 
         mainPage
                 .checkSearchForm()
+                .tapOnSearchWikipedia()
                 .fillSearchField(searchPhrase)
                 .checkResults()
                 .checkSearchedResult(searchPhrase);

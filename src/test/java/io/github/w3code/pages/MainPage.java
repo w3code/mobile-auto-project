@@ -4,6 +4,7 @@ import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import io.appium.java_client.MobileBy;
 import io.qameta.allure.Step;
+import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
 import static com.codeborne.selenide.Condition.exist;
@@ -14,14 +15,14 @@ public class MainPage {
     //locators and elements
     private final SelenideElement
             searchForm = $(MobileBy.id("org.wikipedia.alpha:id/search_container")),
-            searchField = $(MobileBy.id("org.wikipedia.alpha:id/search_container")).$(".android.widget.TextView"),
+            searchWikipedia = $(By.xpath("//android.widget.TextView[@text=\"Search Wikipedia\"]")),
             searchFieldText = $(MobileBy.id("org.wikipedia.alpha:id/search_src_text")),
             itemTitle = $(MobileBy.id("org.wikipedia.alpha:id/page_list_item_title")),
             moreButton = $(MobileBy.id("org.wikipedia.alpha:id/nav_more_container")),
             settingsSelect = $(MobileBy.id("org.wikipedia.alpha:id/main_drawer_settings_container"));
 
     private final ElementsCollection
-            searchResults = $(MobileBy.id("org.wikipedia.alpha:id/search_results_list")).$$("android.view.ViewGroup");
+            searchResults = $(MobileBy.id("org.wikipedia.alpha:id/search_results_list")).$$(MobileBy.id("org.wikipedia.alpha:id/page_list_item_title"));
 
     //actions
     @Step("Check is search form exist")
@@ -30,9 +31,14 @@ public class MainPage {
         return this;
     }
 
+    @Step("Tap on Search Wikipedia")
+    public MainPage tapOnSearchWikipedia() {
+        searchWikipedia.click();
+        return this;
+    }
+
     @Step("Fill search field")
     public MainPage fillSearchField(String searchPhrase) {
-        searchField.click();
         searchFieldText.setValue(searchPhrase);
         return this;
     }
