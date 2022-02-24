@@ -54,23 +54,23 @@ The project can be launched by four ways. You can choose the way by setting up t
 > To run autotests in Jenkins you need choose the `deviceHost` parameter.
 
 <p align="center">
-  <img src="https://github.com/w3code/mobile-auto-project/blob/ae214a2b3f0579314588b6d42a60641563e5589a/assets/screenshots/jenkins_params.png">
+  <img src="https://github.com/w3code/mobile-auto-project/raw/main/assets/screenshots/jenkins_params.png">
 </p>
 
 After the build is finished you can view the Allure Repost for this build.
 
 <p align="center">
-  <img src="https://github.com/w3code/mobile-auto-project/blob/ae214a2b3f0579314588b6d42a60641563e5589a/assets/screenshots/jenkins_project.png">
+  <img src="https://github.com/w3code/mobile-auto-project/raw/main/assets/screenshots/jenkins_project.png">
 </p>
 
 ## Allure Report
 
 <p align="center">
-  <img src="https://github.com/w3code/mobile-auto-project/blob/ae214a2b3f0579314588b6d42a60641563e5589a/assets/screenshots/allure_report_1.png">
+  <img src="https://github.com/w3code/mobile-auto-project/raw/main/assets/screenshots/allure_report_1.png">
 </p>
 
 <p align="center">
-  <img src="https://github.com/w3code/mobile-auto-project/blob/ae214a2b3f0579314588b6d42a60641563e5589a/assets/screenshots/allure_report_2.png">
+  <img src="https://github.com/w3code/mobile-auto-project/raw/main/assets/screenshots/allure_report_2.png">
 </p>
 
 ## Allure TestOps
@@ -78,19 +78,19 @@ After the build is finished you can view the Allure Repost for this build.
 ### Launches
 
 <p align="center">
-  <img src="https://github.com/w3code/mobile-auto-project/blob/ae214a2b3f0579314588b6d42a60641563e5589a/assets/screenshots/allure_testops_launches.png">
+  <img src="https://github.com/w3code/mobile-auto-project/raw/main/assets/screenshots/allure_testops_launches.png">
 </p>
 
 ### Dashboards
 
 <p align="center">
-  <img src="https://github.com/w3code/mobile-auto-project/blob/ae214a2b3f0579314588b6d42a60641563e5589a/assets/screenshots/allure_testops_dashboards.png">
+  <img src="https://github.com/w3code/mobile-auto-project/raw/main/assets/screenshots/allure_testops_dashboards.png">
 </p>
 
 ### Dashboards
 
 <p align="center">
-  <img src="https://github.com/w3code/mobile-auto-project/blob/ae214a2b3f0579314588b6d42a60641563e5589a/assets/screenshots/allure_testops_testresults.png">
+  <img src="https://github.com/w3code/mobile-auto-project/raw/main/assets/screenshots/allure_testops_testresults.png">
 </p>
 
 ## Jira
@@ -98,19 +98,19 @@ After the build is finished you can view the Allure Repost for this build.
 > Jira used as bugtrecking system with Allure TestOps integration
 
 <p align="center">
-  <img src="https://github.com/w3code/mobile-auto-project/blob/ae214a2b3f0579314588b6d42a60641563e5589a/assets/screenshots/jira.png">
+  <img src="https://github.com/w3code/mobile-auto-project/raw/main/assets/screenshots/jira.png">
 </p>
 
 ## Browserstack video
 
 | Get started pages test | Search phrase test | Add language test | Disable Send Usage Data Test | Check build version test |
 | :--------: |:--------: | :--------: | :--------: | :--------: |
-| ![](https://github.com/w3code/mobile-auto-project/blob/ae214a2b3f0579314588b6d42a60641563e5589a/assets/gif/getstartedtest.gif) | ![](https://github.com/w3code/mobile-auto-project/blob/ae214a2b3f0579314588b6d42a60641563e5589a/assets/gif/searchtest.gif) | ![](https://github.com/w3code/mobile-auto-project/blob/ae214a2b3f0579314588b6d42a60641563e5589a/assets/gif/addlanguagetest.gif) | ![](https://github.com/w3code/mobile-auto-project/blob/ae214a2b3f0579314588b6d42a60641563e5589a/assets/gif/senddatatest.gif) | ![](https://github.com/w3code/mobile-auto-project/blob/ae214a2b3f0579314588b6d42a60641563e5589a/assets/gif/buildversiontest.gif) |
+| ![](https://github.com/w3code/mobile-auto-project/raw/main/assets/gif/getstartedtest.gif) | ![](https://github.com/w3code/mobile-auto-project/raw/main/assets/gif/searchtest.gif) | ![](https://github.com/w3code/mobile-auto-project/raw/main/assets/gif/addlanguagetest.gif) | ![](https://github.com/w3code/mobile-auto-project/raw/main/assets/gif/senddatatest.gif) | ![](https://github.com/w3code/mobile-auto-project/raw/main/assets/gif/buildversiontest.gif) |
 
 
 
 ## Telegram notifications
 
 <p align="center">
-  <img src="https://github.com/w3code/mobile-auto-project/blob/ae214a2b3f0579314588b6d42a60641563e5589a/assets/screenshots/tlg.png">
+  <img src="https://github.com/w3code/mobile-auto-project/raw/main/assets/screenshots/tlg.png">
 </p>
