@@ -18,7 +18,8 @@ import static io.github.w3code.helpers.DeviceSelection.getDeviceDriver;
 import static io.qameta.allure.Allure.step;
 
 public class TestBase {
-    private static final String deviceHost = System.getProperty("deviceHost");
+    //private static final String deviceHost = System.getProperty("deviceHost");
+    private static final String deviceHost = "browserstack";
     GetStartedPage getStartedPage = new GetStartedPage();
     MainPage mainPage = new MainPage();
     SettingsPage settingsPage = new SettingsPage();

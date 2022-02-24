@@ -47,7 +47,6 @@ public class WikipediaAppTests extends TestBase {
         String language = "Русский";
 
         getStartedPage
-                .checkPageText("The Free Encyclopedia …in over 300 languages")
                 .tapOnAddOrEditLanguages()
                 .tapOnAddLanguage()
                 .selectLanguage(language)

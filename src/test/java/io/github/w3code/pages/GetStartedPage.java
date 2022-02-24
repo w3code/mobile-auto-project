@@ -15,9 +15,10 @@ public class GetStartedPage {
             forwardButton = $(MobileBy.id("org.wikipedia.alpha:id/fragment_onboarding_forward_button")),
             doneButton = $(MobileBy.id("org.wikipedia.alpha:id/fragment_onboarding_done_button")),
             skipButton = $(MobileBy.id("org.wikipedia.alpha:id/fragment_onboarding_skip_button")),
-            addOrEditLanguage = $(MobileBy.id("org.wikipedia.alpha:id/addLangContainer")),
-            addLanguage = $(By.xpath("//android.widget.TextView[@text=\"Add language\"]")),
-            navigateUp = $(By.xpath("//android.widget.ImageButton[@content-desc=\"Navigate up\"]")),
+            addOrEditLanguage = $(By.xpath("//*[@resource-id='org.wikipedia.alpha:id/addLangContainer']/*[last()]")),
+            addLanguage = $(By.xpath("//*[@resource-id='org.wikipedia.alpha:id/wikipedia_languages_recycler']" +
+                    "/*[last()]/*[last()]")),
+            navigateUp = $(By.xpath("//*[@resource-id='org.wikipedia.alpha:id/action_bar']/*[1]")),
             sendUsageData = $(MobileBy.id("org.wikipedia.alpha:id/switchView"));
 
     //actions
