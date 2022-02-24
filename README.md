@@ -87,7 +87,7 @@ After the build is finished you can view the Allure Report for this build.
   <img src="https://github.com/w3code/mobile-auto-project/raw/main/assets/screenshots/allure_testops_dashboards.png">
 </p>
 
-### Dashboards
+### Launch Tree
 
 <p align="center">
   <img src="https://github.com/w3code/mobile-auto-project/raw/main/assets/screenshots/allure_testops_testresults.png">
