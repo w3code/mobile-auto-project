@@ -112,5 +112,5 @@ After the build is finished you can view the Allure Repost for this build.
 ## Telegram notifications
 
 <p align="center">
-  <img src="https://github.com/w3code/mobile-auto-project/raw/main/assets/screenshots/tlg.png">
+  <img src="https://github.com/w3code/mobile-auto-project/raw/main/assets/screenshots/tlg.jpg">
 </p>
