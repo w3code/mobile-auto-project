@@ -57,7 +57,7 @@ The project can be launched by four ways. You can choose the way by setting up t
   <img src="https://github.com/w3code/mobile-auto-project/raw/main/assets/screenshots/jenkins_params.png">
 </p>
 
-After the build is finished you can view the Allure Repost for this build.
+After the build is finished you can view the Allure Report for this build.
 
 <p align="center">
   <img src="https://github.com/w3code/mobile-auto-project/raw/main/assets/screenshots/jenkins_project.png">
@@ -114,3 +114,7 @@ After the build is finished you can view the Allure Repost for this build.
 <p align="center">
   <img src="https://github.com/w3code/mobile-auto-project/raw/main/assets/screenshots/tlg.jpg">
 </p>
+
+## Contact
+
+#### Telegram: [@w3c0de](https://t.me/w3c0de)
